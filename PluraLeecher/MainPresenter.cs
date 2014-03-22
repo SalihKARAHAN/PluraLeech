@@ -19,6 +19,7 @@ namespace PluraLeecher
     public class MainPresenter
     {
         private readonly IMainView _view;
+
         private List<Video> _videoList;
         private readonly DownloadHelper _downloadHelper;
         private int _currentVideoIndex;
@@ -133,10 +134,6 @@ namespace PluraLeecher
             _courseIndex++;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
         private List<Video> GetVideoList()
         {
             _view.VideoTitleList.Clear();

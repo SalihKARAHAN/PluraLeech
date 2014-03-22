@@ -9,6 +9,7 @@ namespace PluraLeecher
     public partial class FrmMain : Form, IMainView
     {
         private readonly MainPresenter _presenter;
+
         public FrmMain()
         {
             InitializeComponent();
